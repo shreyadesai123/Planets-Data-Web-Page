@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-image: url("felix-mittermeier-Knwea-mLGAg-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: mintcream;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    background: none;
+}
+header h1,h2{
+    padding: 0.5rem;
+    background: none;
+}
+button{
+    margin-left: 46%;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: none;
+    margin-top: 20px;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border: 1px solid mintcream;
+    box-shadow: 0 0 10px rgb(199, 251, 251),0 0 20px rgb(199, 251, 251);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 10px;
+    background-image: url("cosmic.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: unset;
+}
+@keyframes pulse{
+    0%,100%{
+        box-shadow: 0 0 15px #0ff,0 0 25px #0ff;
+    }
+    50%{
+        box-shadow: 0 0 25px #0ff,0 0 40px #0ff;
+    }
+}
+.circle{
+    animation: pulse 3s infinite;
+}
+article h4{
+    font-size: large;
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #0ff,0 0 20px #0ff;
+    background: none;
+}
+article span{
+    color: mintcream;
+    background: none;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    header{
+        align-items: flex-start;
+    }
+    header h1{
+        margin-left: 2%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    button{
+        margin: 4%;
+    } 
+  }
+  
+  @media (min-width: 490px) and (max-width: 768px) {
+    header{
+        align-items: flex-start;
+    }
+    header h1{
+        margin-left: 2%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    button{
+        margin: 4%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    header{
+        align-items: flex-start;
+    }
+    header h1{
+        margin-left: 2%;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+    .circle{
+        height: 150px;
+        width: 150px;
+    }
+    button{
+        margin: 4%;
+    } 
+  }
+  @media (min-width: 1025px) and (max-width: 1280px){
+     main{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        row-gap: 20px;
+        column-gap: 20px;
+    }
+  }
+
